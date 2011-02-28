@@ -24,3 +24,5 @@ alias afind='ack-grep -il'
 
 # Clear screen
 alias c="clear"
+
+alias x=extract
