@@ -12,8 +12,8 @@ ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[magenta]%} ="
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[purple]%} ?"
 
 # -----/ default prompt /-----
-PROMPT='${blue}%n${reset_color}@${green}%m${red} %~$(git_prompt_info) ${blue}<${reset_color}%T${blue}>%{$reset_color}
+PROMPT='${blue}%n${reset_color}@${green}%m${red} %~$(git_prompt_info) ${blue}<${reset_color}%T${blue}>${reset_color}
 $ '
 
 # -----/ right prompt /-----
-RPROMPT='$(git_prompt_status)%${reset_color}'
+RPROMPT='$(git_prompt_status)%{$reset_color%}'
