@@ -1,7 +1,10 @@
 # ls colors
 autoload colors; colors;
-export LSCOLORS="Gxfxcxdxbxegedabagacad"
-#export LS_COLORS
+# LS colors, made with http://geoff.greer.fm/lscolors/
+# BSD
+export LSCOLORS="exfxcxdxbxegehabagacaf"
+# Linux
+export LS_COLORS='di=34;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;47:su=0;41:sg=0;46:tw=0;42:ow=0;45:'
 
 # Enable ls colors
 if [ "$DISABLE_LS_COLORS" != "true" ]
@@ -33,4 +36,23 @@ ZSH_THEME_GIT_PROMPT_CLEAN=""               # Text to display if the branch is c
 
 # Setup the prompt with pretty colors
 setopt prompt_subst
+
+# Colours
+export black=$'%{\e[0;30m%}'
+export red=$'%{\e[0;31m%}'
+export green=$'%{\e[0;32m%}'
+export brown=$'%{\e[0;33m%}'
+export blue=$'%{\e[0;34m%}'
+export purple=$'%{\e[0;35m%}'
+export cyan=$'%{\e[0;36m%}'
+export light_gray=$'%{\e[0;37m%}'
+export dark_gray=$'%{\e[1;30m%}'
+export light_red=$'%{\e[1;31m%}'
+export light_green=$'%{\e[1;32m%}'
+export yellow=$'%{\e[1;33m%}'
+export light_blue=$'%{\e[1;34m%}'
+export pink=$'%{\e[1;35m%}'
+export light_cyan=$'%{\e[1;36m%}'
+export white=$'%{\e[1;37m%}'
+export reset_color=$'%{\e[0m%}'
 
