@@ -26,3 +26,6 @@ alias afind='ack-grep -il'
 alias c="clear"
 
 alias x=extract
+
+# Alias to use Pry as alternative to Rails console.
+alias pryr="pry -r ./config/environment -r rails/console/app -r rails/console/helpers"
