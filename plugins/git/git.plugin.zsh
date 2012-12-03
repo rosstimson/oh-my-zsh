@@ -30,8 +30,10 @@ alias glg='git log --stat --max-count=5'
 compdef _git glg=git-log
 alias glgg='git log --graph --max-count=5'
 compdef _git glgg=git-log
-alias gls='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold magenta)<%an>%Creset" --abbrev-commit --date=relative'
+alias gls='git log --graph --all --format=format:"%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %s%C(reset) %C(bold)- %an%C(reset)%C(bold yellow)%d%C(reset)" --abbrev-commit --date=relative'
 compdef _git gls=git-log
+alias gls2='git log --graph --all --format=format:"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %s%C(reset) %C(bold)- %an%C(reset)" --abbrev-commit'
+compdef _git gls2=git-log
 alias gss='git status -s'
 compdef _git gss=git-status
 alias ga='git add'
