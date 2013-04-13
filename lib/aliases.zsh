@@ -22,6 +22,11 @@ alias ll='ls -l'
 alias la='ls -lA'
 alias sl=ls # often screw this up
 
+# List recently changed files
+lr() {
+  ls -lt "$@" | head
+}
+
 alias afind='ack-grep -il'
 
 # Clear screen
