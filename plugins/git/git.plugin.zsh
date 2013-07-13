@@ -128,3 +128,7 @@ function _git_log_prettily(){
 }
 alias glp="_git_log_prettily"
 compdef _git glp=git-log
+
+# Recursively update all submodules
+alias gsubup='git submodule foreach git pull origin master'
+compdef gsubup=git
